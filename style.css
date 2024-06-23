@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.sign-in-button {
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu .sign-in-button {
+    background-color: #007BFF;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
